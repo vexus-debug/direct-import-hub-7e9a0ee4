@@ -1,5 +1,4 @@
 /// <reference types="vite/client" />
-/// <reference types="vite-plugin-pwa/client" />
 
 declare module "virtual:pwa-register" {
   export function registerSW(options?: unknown): (reloadPage?: boolean) => Promise<void>;
