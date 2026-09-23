@@ -124,7 +124,7 @@ export function PwaProvider({ children }: { children: ReactNode }) {
         await unregisterAppSw();
         return;
       }
-      const { registerSW } = await import("virtual:pwa-register");
+      const { registerSW } = await import("@/lib/pwa-register-stub");
       if (cancelled) return;
       setSwEnabled(true);
       updateRef.current = registerSW({
