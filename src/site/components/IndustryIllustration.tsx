@@ -5,6 +5,8 @@ type Props = { variant: string; className?: string };
 const P = "hsl(var(--primary))";
 const T = "hsl(var(--medical-teal))";
 
+import type { JSX } from "react";
+
 const motifs: Record<string, JSX.Element> = {
   dental: (
     <g>
